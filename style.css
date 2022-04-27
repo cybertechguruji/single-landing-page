@@ -222,7 +222,7 @@ footer{
 }
 @media screen and (max-width: 425px) {
     body{
-        width: 100vh;
+        width: 100%;
     }
     .parallex h1 {
         font-size: 2.5em;
