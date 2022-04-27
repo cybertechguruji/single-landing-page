@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+.parallex {
+    width: 100%;
+    height: 100vh;
+    background: url(image1.jpg) center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parallex h1 {
+    color: white;
+    font-size: 5em;
+    line-height: 1.5;
+    text-shadow: 2px 2px 2px black;
+}
+.parallex p {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px black;
+}
+.card-table {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-table h2 {
+    font-size: 2em;
+    padding: 30px 0;
+}
+.card-table .table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.table .card {
+    margin: 10px 30px;
+    width: 50%;
+    max-width: 370px;
+    min-width: 300px;
+    height: 350px;
+    box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;
+}
+.table .card:hover {
+    box-shadow: 3px 3px 10px grey, -3px -3px 10px grey;
+    transform: scale(101%);
+}
+.card .img {
+    width: 100%;
+    height: 150px;
+    background: url(image2.jpg) center no-repeat;
+    background-size: cover;
+}
+.card p {
+    padding: 0 20px;
+    text-align: justify;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(92, 135, 253);
+}
+.col-avg{
+    margin: 10px 5px;
+    min-width: 400px;
+    width: 45%;
+    height: auto;
+    background-color: white;
+    
+}
+.col-avg .img{
+    width: 100%;
+    height: 200px;
+    background-image: url(image3.jpg);
+}
+.col-avg h2{
+    padding: 10px 0;
+    text-align: center;
+}
+.col-avg p{
+    padding: 10px;
+    text-align: justify;
+}
+.col-avg a{
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 7px;
+}
+.col-avg a:hover{
+    background-color: pink;
+    border: none;
+}
+.ser{
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    background: url(image4.jpg) center fixed no-repeat;
+    background-size: cover;
+}
+.ser h1{
+    line-height: 2;
+}
+.ser p{
+    line-height: 1.5;
+}
+.scol{
+    padding: 30px 20px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.scol .scard{
+    margin: 10px 20px;
+    background-color: white;
+    max-width: 250px;
+}
+.scard .img{
+    width: 100%;
+    height: 200px;
+    background: url(image4.jpg) ;
+}
+.scard h2{
+    padding: 10px;
+}
+.scard p{
+    padding: 10px;
+}
+.bcol{
+    background-color: white;
+    padding: 10px 20px;
+}
+.bcol .bbcol{
+    margin: 20px;
+    background-color: wheat;
+}
+.bbcol .img{
+    width: 100%;
+    height: 400px;
+    background: url(image3.jpg) center no-repeat;
+}
+.bbcol h2{
+    padding: 20px;
+}
+.bbcol p{
+    padding: 10px 20px;
+    line-height: 1.75;
+}
+.bbcol a{
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.bbcol a:hover{
+    background-color: pink;
+    border: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: lightblue;
+}
+form{
+    line-height: 1.25;
+    max-width: 500px;
+    display: grid;
+}
+form input,textarea{
+    outline: none;
+    border: 1px solid black;
+    margin-top: 5px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+input[type="submit"]{
+   border: 1px solid blue;
+   background-color: transparent;
+   color: blue;
+   width: 150px;
+}
+input[type="submit"]:hover{
+    background-color: blue;
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    color: lightslategray;
+    background-color: rgb(19, 19, 19);
+}
+@media screen and (max-width: 425px) {
+    body{
+        width: 100vh;
+    }
+    .parallex h1 {
+        font-size: 2.5em;
+    }
+
+    .parallex p {
+        font-size: 1.5em;
+    }
+}
