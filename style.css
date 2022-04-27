@@ -78,8 +78,8 @@ body {
     background-color: rgb(92, 135, 253);
 }
 .col-avg{
-    margin: 10px 5px;
-    min-width: 400px;
+    margin: 10px;
+    min-width: 350px;
     width: 45%;
     height: auto;
     background-color: white;
@@ -222,7 +222,10 @@ footer{
 }
 @media screen and (max-width: 425px) {
     body{
-        width: 100vw;
+        min-width: 100%;
+    }
+    .parallex{
+        height: 50vh;
     }
     .parallex h1 {
         font-size: 2.5em;
